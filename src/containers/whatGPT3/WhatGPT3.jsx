@@ -4,12 +4,12 @@ import Feature from '../../components/feature/Feature';
 
 const WhatGPT3 = () => {
   const features = [
-    {title : "Chatbots",text : "We so opinion friends me message as delight. Whole front do of plate heard oh ought. "},
-    {title : "Knowledgebase",text : "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"},
-    {title : "Education",text : "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"}
+    {id: 1,title : "Chatbots",text : "We so opinion friends me message as delight. Whole front do of plate heard oh ought. "},
+    {id: 2,title : "Knowledgebase",text : "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"},
+    {id: 3,title : "Education",text : "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"}
   ];
   return (
-    <div className='gpt3__whatgpt3 section__margin '>
+    <div className='gpt3__whatgpt3 section__margin' id='wgpt3'>
       <div className="gpt3__whatgpt3-main-feature">
         <Feature title={"What is GPT-3"} text={"We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."} />
       </div>
@@ -20,7 +20,7 @@ const WhatGPT3 = () => {
       <div className='gpt3__whatgpt3-container'>
           {
             features.map(feature => {
-              return (<Feature title={feature.title} text={feature.text} />);
+              return (<Feature title={feature.title} text={feature.text} key={feature.id} />);
             })
           }
       </div>

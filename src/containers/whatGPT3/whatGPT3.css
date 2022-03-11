@@ -66,6 +66,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  transition: 0.3s;
+}
+
+.gpt3__whatgpt3-title p:hover {
+  cursor: pointer;
+  transform: translateX(-10px);
 }
 
 .gpt3__whatgpt3-main-feature .gpt3__feature-text {

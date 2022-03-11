@@ -42,3 +42,12 @@
     line-height: 18px;
   }
 }
+
+@media screen and (max-width: 330px) {
+  .gpt3__feature-container {
+    max-width: 160px !important;
+  }
+  .gpt3__feature-title {
+    min-width: auto !important;
+  }
+}

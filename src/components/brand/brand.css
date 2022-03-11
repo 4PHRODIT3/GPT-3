@@ -7,6 +7,12 @@
 
 .gpt3__brand div {
   margin: 2rem;
+  transition: 0.3s;
+}
+
+.gpt3__brand div:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 @media screen and (max-width: 550px) {

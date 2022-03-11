@@ -52,4 +52,7 @@
   .gpt3__features-container .gpt3__feature-text {
     margin-left: 0rem;
   }
+  .gtp3__features-title {
+    margin-right: 0;
+  }
 }
